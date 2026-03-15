@@ -30,7 +30,7 @@ export const FloatingSearchBar = () => {
       <div className="flex-1 flex items-center gap-3 px-4 py-3 w-full">
         <School className="size-6" />
         <Select>
-          <SelectTrigger className="bg-transparent border-none focus:ring-0 text-sm w-full max-w-30"> 
+          <SelectTrigger className="bg-transparent border-none focus:ring-0 text-sm w-full md:max-w-30">
             <SelectValue placeholder="Property Type" />
           </SelectTrigger>
           <SelectContent>
@@ -48,7 +48,7 @@ export const FloatingSearchBar = () => {
       <Separator className="w-full md:hidden" />
 
       <div className="flex-1 flex items-center gap-3 px-4 py-3 w-full">
-        <Banknote className="size-6"/>
+        <Banknote className="size-6" />
         <Input
           type="text"
           placeholder="Price range"

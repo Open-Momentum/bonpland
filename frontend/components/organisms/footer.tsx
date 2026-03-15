@@ -46,51 +46,41 @@ export const Footer = () => {
           <div>
             <h5 className="font-bold mb-6">Explore</h5>
             <ul className="space-y-4 text-sm text-gray-500 dark:text-gray-400">
-              <li>
-                <a className="hover:text-primary transition-colors" href="#">
-                  Featured Listings
-                </a>
-              </li>
-              <li>
-                <a className="hover:text-primary transition-colors" href="#">
-                  Recent Sales
-                </a>
-              </li>
-              <li>
-                <a className="hover:text-primary transition-colors" href="#">
-                  Property Management
-                </a>
-              </li>
-              <li>
-                <a className="hover:text-primary transition-colors" href="#">
-                  Investment Portfolios
-                </a>
-              </li>
+              {[
+                'Featured Listings',
+                'Recent Sales',
+                'Property Management',
+                'Investment Portfolios',
+              ].map((item) => (
+                <li key={item}>
+                  <Link
+                    className="hover:text-primary transition-colors"
+                    href="#"
+                  >
+                    {item}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div>
             <h5 className="font-bold mb-6">Company</h5>
             <ul className="space-y-4 text-sm text-gray-500 dark:text-gray-400">
-              <li>
-                <a className="hover:text-primary transition-colors" href="#">
-                  About Our Story
-                </a>
-              </li>
-              <li>
-                <a className="hover:text-primary transition-colors" href="#">
-                  Meet the Team
-                </a>
-              </li>
-              <li>
-                <a className="hover:text-primary transition-colors" href="#">
-                  Career Opportunities
-                </a>
-              </li>
-              <li>
-                <a className="hover:text-primary transition-colors" href="#">
-                  Press &amp; Media
-                </a>
-              </li>
+              {[
+                'About Our Story',
+                'Meet the Team',
+                'Career Opportunities',
+                'Press & Media',
+              ].map((item) => (
+                <li key={item}>
+                  <Link
+                    className="hover:text-primary transition-colors"
+                    href="#"
+                  >
+                    {item}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div>
@@ -113,7 +103,7 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-between items-center pt-10 border-t border-gray-100 dark:border-gray-900 gap-4">
+        <div className="flex flex-col md:flex-row justify-between items-center pt-10 border-t gap-4">
           <p className="text-xs text-gray-400">
             &copy; {new Date().getFullYear()} Bonpland. All rights reserved.
           </p>
