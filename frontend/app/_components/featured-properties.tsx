@@ -11,11 +11,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const LargeFeaturedCard = ({
-  name = 'The Glass Pavilion',
-  beds = 4,
-  baths = 5,
-  sqft = '4,500',
-  price = '$4,250,000',
+  name = 'Residencia Moderna',
+  beds = 3,
+  baths = 2,
+  sqft = '200',
+  price = '$350,000',
   srcImg = '/images/glass-pavilion.webp',
 }) => {
   return (
@@ -29,20 +29,22 @@ const LargeFeaturedCard = ({
         <Badge
           variant="secondary"
           className="mb-4 px-3 py-1 h-auto text-xs font-bold uppercase tracking-wider"
-        >{`Editor's Choice`}</Badge>
+        >
+          Destacada
+        </Badge>
         <h3 className="text-3xl font-bold mb-2">{name}</h3>
         <div className="flex items-center gap-4 text-white/80 text-sm">
           <span className="flex items-center gap-1">
             <BedDouble className="size-4" />
-            {beds} Beds
+            {beds} dorm.
           </span>
           <span className="flex items-center gap-1">
             <Bath className="size-4" />
-            {baths} Baths
+            {baths} baños
           </span>
           <span className="flex items-center gap-1">
             <RulerDimensionLine className="size-4" />
-            {sqft} sqft
+            {sqft} m²
           </span>
         </div>
         <div className="mt-6 flex items-center justify-between">
@@ -61,10 +63,10 @@ const LargeFeaturedCard = ({
 };
 
 const SmallFeaturedCard = ({
-  location = 'Miami, FL',
-  name = 'Azure Heights',
-  description = 'Panoramic ocean views with floor-to-ceiling windows and private terrace.',
-  price = '$1,850,000',
+  location = 'Zona Norte',
+  name = 'Apartamento Vista Alegre',
+  description = 'Espacioso apartamento con balcón, acabados premium y excelente iluminación natural.',
+  price = '$185,000',
   url = '#',
   srcImg = '/images/building-image.webp',
 }) => {
@@ -95,7 +97,7 @@ const SmallFeaturedCard = ({
             asChild
           >
             <Link href={url} className="flex items-center gap-2 ">
-              View Property <MoveRight className="size-6" />
+              Ver propiedad <MoveRight className="size-6" />
             </Link>
           </Button>
         </div>
@@ -110,21 +112,21 @@ export const FeaturedProperties = () => {
       <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
         <div>
           <span className="text-primary font-bold tracking-widest text-xs uppercase">
-            Curated Collection
+            Selección curada
           </span>
           <h2 className="text-3xl md:text-4xl font-extrabold mt-2">
-            Featured Properties
+            Propiedades destacadas
           </h2>
         </div>
         <div className="flex gap-3">
           <button className="px-5 py-2 rounded-full bg-primary text-white text-sm font-bold">
-            All
+            Todas
           </button>
           <button className="px-5 py-2 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-sm font-bold">
-            Villas
+            Casas
           </button>
           <button className="px-5 py-2 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-sm font-bold">
-            Penthouses
+            Apartamentos
           </button>
         </div>
       </div>
@@ -132,10 +134,10 @@ export const FeaturedProperties = () => {
         <LargeFeaturedCard />
         <SmallFeaturedCard />
         <SmallFeaturedCard
-          name="Oakwood Manor"
-          location="Aspen, CO"
-          description="Exclusive mountain retreat featuring sustainable cedar wood and open design."
-          price="$3,100,000"
+          name="Quinta Residencial"
+          location="Sector Exclusivo"
+          description="Casa familiar con amplio patio, área social y estacionamiento para varios vehículos."
+          price="$310,000"
           srcImg="/images/rural-house.webp"
           url="#"
         />

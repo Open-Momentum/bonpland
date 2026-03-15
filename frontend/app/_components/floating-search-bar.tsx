@@ -19,7 +19,7 @@ export const FloatingSearchBar = () => {
         <MapPin className="size-6" />
         <Input
           type="text"
-          placeholder="Where would you like to live?"
+          placeholder="¿En qué zona o ciudad buscas?"
           className="bg-transparent border-none focus:ring-0 text-sm w-full"
         />
       </div>
@@ -31,14 +31,16 @@ export const FloatingSearchBar = () => {
         <School className="size-6" />
         <Select>
           <SelectTrigger className="bg-transparent border-none focus:ring-0 text-sm w-full md:max-w-30">
-            <SelectValue placeholder="Property Type" />
+            <SelectValue placeholder="Tipo de propiedad" />
           </SelectTrigger>
           <SelectContent>
             <SelectGroup>
-              <SelectLabel>Property Type</SelectLabel>
-              <SelectItem value="modern-villa">Modern Villa</SelectItem>
-              <SelectItem value="luxury-apartment">Luxury Apartment</SelectItem>
-              <SelectItem value="commercial">Commercial</SelectItem>
+              <SelectLabel>Tipo de propiedad</SelectLabel>
+              <SelectItem value="casa">Casa</SelectItem>
+              <SelectItem value="apartamento">Apartamento</SelectItem>
+              <SelectItem value="oficina">Oficina</SelectItem>
+              <SelectItem value="local-comercial">Local comercial</SelectItem>
+              <SelectItem value="terreno">Terreno</SelectItem>
             </SelectGroup>
           </SelectContent>
         </Select>
@@ -51,7 +53,7 @@ export const FloatingSearchBar = () => {
         <Banknote className="size-6" />
         <Input
           type="text"
-          placeholder="Price range"
+          placeholder="Rango de precio"
           className="bg-transparent border-none focus:ring-0 text-sm w-full"
         />
       </div>
@@ -59,7 +61,7 @@ export const FloatingSearchBar = () => {
         size={'lg'}
         className="w-full md:w-auto hover:scale-[1.02] transition-transform px-10! py-4! rounded-full! h-auto"
       >
-        <Search /> Search
+        <Search /> Buscar
       </Button>
     </div>
   );

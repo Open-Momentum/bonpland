@@ -4,10 +4,10 @@ import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 const NAV_OPTIONS = [
-  { label: 'Buy', href: '#' },
-  { label: 'Rent', href: '#' },
-  { label: 'Sell', href: '#' },
-  { label: 'About Us', href: '#' },
+  { label: 'Comprar', href: '#' },
+  { label: 'Alquilar', href: '#' },
+  { label: 'Vender', href: '#' },
+  { label: 'Nosotros', href: '#' },
 ];
 
 export const Header = () => {
@@ -35,7 +35,7 @@ export const Header = () => {
           ))}
         </nav>
         <div className="flex items-center gap-4">
-          <Button size="lg">List Your Property</Button>
+          <Button size="lg">Publica tu propiedad</Button>
           <Avatar size="lg">
             <AvatarImage src="https://github.com/MrRedu.png" />
             <AvatarFallback>RD</AvatarFallback>

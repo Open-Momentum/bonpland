@@ -16,11 +16,11 @@ export const HeroSection = () => {
         <div className="absolute inset-0 bg-black/20 backdrop-blur-xs" />
         <div className="max-w-3xl space-y-6 text-white z-1">
           <h1 className="text-5xl md:text-7xl font-black leading-tight tracking-tighter">
-            Find Your <span className="text-primary italic">Sanctuary.</span>
+            Encuentra tu <span className="text-primary italic">Hogar.</span>
           </h1>
           <p className="text-lg md:text-xl font-medium max-w-xl mx-auto">
-            {`Curated architectural masterpieces in the world's most breathtaking
-            locations.`}
+            {`Propiedades seleccionadas para alquilar o comprar, en las mejores
+            ubicaciones de la ciudad.`}
           </p>
           <FloatingSearchBar />
         </div>
